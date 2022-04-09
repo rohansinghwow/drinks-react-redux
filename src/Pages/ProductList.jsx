@@ -50,16 +50,16 @@ export default function ProductList() {
   function renderList(){
     if(!loading){
       return (
-        <div className="container-card flex justify-around rounded-lg flex-wrap">
+        <div className="container-card flex justify-between rounded-lg flex-wrap">
         {improvedCocktailsList.map((item) => (
           <div
             key={item.key}
-            className="max-w-sm rounded overflow-hidden shadow-lg mt-6"
+            className="max-w-sm rounded  w-72 mt-6 shadow-lg flex flex-col justify-between mx-auto"
           >
-            <img className="w-full" src={item.img} alt={item.drinkName} />
-            <div className="px-6 py-4">
+            <img className="w-full" src={item.img} alt={item.drinkName}  />
+            <div className="px-3 py-2">
               <div className="font-bold text-xl mb-2">{item.drinkName}</div>
-              <p className="text-gray-700 text-base">{item.details}</p>
+              <p className="text-gray-700 text-ellipsis">{item.details.substring(0,200)}...</p>
             </div>
             <div className="px-6 pt-4 pb-2">
               <span className="inline-block bg-gray-200 py-2 px-4 rounded text-sm font-semibold text-gray-700 mr-2 mb-2">
