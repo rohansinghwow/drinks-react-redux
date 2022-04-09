@@ -50,7 +50,7 @@ export default function ProductList() {
   function renderList(){
     if(!loading){
       return (
-        <div className="container-card flex justify-between rounded-lg flex-wrap">
+        <div className="container-card  flex justify-between rounded-lg flex-wrap">
         {improvedCocktailsList.map((item) => (
           <div
             key={item.key}
