@@ -3,4 +3,4 @@ A drinks webapp made with react-redux
 
 # Live Demo
 
-[https://drinks-redux.netlify.app/][website]
+[https://drinks-redux.netlify.app/]
